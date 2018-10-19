@@ -1,0 +1,473 @@
+body {
+  background-color: black;
+}
+
+.page-container {
+  margin-left: 2em;
+  margin-right: 3em;
+  border-bottom-style: inset;
+}
+
+
+
+.gray-space {
+  background-color: #3b3d42;
+  height: 20px;
+  width: auto;
+  position: absolute;
+}
+
+/*This is all the styling for the elements in the banner container*/
+
+#banner_container img {
+  border-radius: 100%;
+  width: 50%;
+  height: 50%;
+}
+
+h1 {
+  font-family: "Vollkorn";
+  font-style: bold;
+  font-size: 42px;
+  text-align: center;
+  font-weight: 900px;
+  color: white;
+}
+
+
+#banner_container h1 {
+  font-family: "Vollkorn";
+  font-style: bold;
+  font-size: 42px;
+  font-style: normal;
+  color: white;
+  text-align: center;
+  font-weight: 900px;
+}
+
+#banner_container {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-left: 20px;
+    border-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 0;
+    margin-top: 55px;
+}
+
+#banner_container a:link {
+  color: yellow;
+  text-decoration: none;
+}
+
+#banner_container a:hover {
+  color: gray;
+}
+
+#banner_container a:visited {
+  color: #4d4d00;
+}
+
+#banner_container pre {
+    color: #d9d9d9;
+    display: block;
+    font-size: 37px;
+    font-family: "Vollkorn:400";
+    font-style: normal;
+    line-height: 38px;
+    text-decoration: inherit;
+    word-spacing: 1px;
+    margin-bottom: 85px;
+}
+
+/*End of the styling of the banner container*/
+
+/*Start of the container styling for the projects section of the page*/
+
+.container {
+    /* height: 47vh; */
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 432px 432px 433px;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px 0px;
+}
+
+/*Styling of the projects container, images and descriptions of each project*/
+
+/*Making the link color yellow*/
+.container a {
+  color: yellow;
+  text-decoration: none;
+
+}
+
+/*When hovering over the anchor tag, the color changes to gray*/
+.container a:hover {
+  color: gray;
+}
+
+.container a:visited {
+  color: #4d4d00;
+}
+
+.container h2 {
+  color: yellow;
+  text-align: left;
+}
+
+
+.container p {
+    text-align: left;
+    font-size: 17px;
+}
+
+.photography {
+    /* height: 47vh; */
+    margin: 67px;
+    display: grid;
+    grid-template-columns: 637px 637px;
+    grid-template-rows: auto auto;
+    grid-gap: 0px 0px;
+}
+
+
+
+.photo-head {
+  color: white;
+  text-align: center;
+}
+
+.currently {
+    /* height: 47vh; */
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 363px 371px 373px 402px;
+    grid-template-rows: auto;
+    grid-gap: 0px 0px;
+    padding: 1px;
+    line-height: 20px;
+}
+.current-head {
+  color: white;
+  text-align: center;
+}
+
+.currently p {
+  font-size: 24px;
+}
+
+/*Individual styling for each class item on each div*/
+.currently img {
+  width: 309px;
+  height: 321px;
+}
+.cell {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.cell :hover .image {
+  opacity: 0.3;
+}
+.cell-1 {
+  background: black;
+}
+.cell-2 {
+  background: black;
+}
+.cell-3 {
+  background: black;
+}
+.cell-4 {
+  background: black;
+}
+.cell-5 {
+  background: black;
+}
+.cell-6 {
+  background: black;
+}
+.cell-7 {
+  background: black;
+}
+.cell-8 {
+  background: black;
+}
+.cell-9 {
+  background: black;
+}
+
+.cell-10 {
+  background: black;
+
+}
+
+.cell-11 {
+  background: black;
+}
+
+.cell-12 {
+  background: black;
+  grid-row: span 2;
+  grid-column: 1;
+}
+
+.cell-13 {
+  background: black;
+  grid-column: 1;
+  grid-row: 4;
+
+}
+
+.cell-14 {
+  background: black;
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.cell-15 img {
+  background: black;
+  /* margin: 10px; */
+
+}
+
+.cell-16 img {
+  background: black;
+  /* margin: 10px; */
+
+}
+
+.cell-17 img {
+  background: black;
+  /* margin: 10px; */
+
+}
+
+.cell-18 img {
+  background: black;
+  /* margin: 10px; */
+
+}
+
+.currently a:link {
+  color: yellow;
+  text-decoration: none;
+}
+
+.currently a:hover {
+  color: gray;
+}
+
+.currently a:visited {
+  color: #4d4d00;
+}
+
+footer {
+  padding-top: 20px;
+}
+
+footer ul li{
+  display: inline;
+  font-size: 22px;
+  word-spacing: 5px;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+footer ul {
+  word-spacing: 26px;
+}
+
+footer a:link {
+  color: yellow;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: gray;
+  text-decoration:
+}
+
+footer a:visited {
+  color: #4d4d00;
+}
+
+footer p {
+  color: white;
+}
+
+nav {
+  display: inline;
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+  .page-container {
+    margin-left: 3em;
+    margin-right: 1em;
+    border-bottom-style: inset;
+  }
+
+
+  .container {
+    height: 420vh;
+    margin-bottom: 72px;
+    margin-left: 30%;
+    display: grid;
+    grid-template-columns: 432px 432px;
+    grid-template-rows: auto auto auto;
+    grid-gap: 0px 0px;
+  }
+
+  .photography {
+    /* height: 47vh; */
+    margin: 67px;
+    display: grid;
+    grid-template-columns: 640px 432px;
+    grid-template-rows: auto auto;
+    grid-gap: 0px 0px;
+  }
+
+  .cell-10 {
+    width: 432px;
+
+  }
+
+  .cell-11 {
+    width: 432px;
+
+  }
+
+  .currently {
+    height: 95vh;
+    margin-left: 67px;
+    display: grid;
+    grid-template-columns: 284px 284px 284px 250px;
+    grid-template-rows: auto;
+    grid-gap: 0px 26px;
+    padding: 1px;
+    line-height: 20px;
+}
+
+  .currently img {
+    width: 274px;
+    height: 311px;
+  }
+
+  h1 {
+    font-family: "Vollkorn";
+    font-style: bold;
+    font-size: 42px;
+    text-align: center;
+    font-weight: 900px;
+    color: white;
+  }
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+  .page-container {
+    margin-left: 3em;
+    margin-right: -50em;
+    border-bottom-style: inset;
+}
+
+
+  .container {
+    height: 578vh;
+    margin-bottom: 72px;
+    display: grid;
+    grid-template-columns: 480px;
+    /* grid-template-rows: auto auto auto; */
+    grid-gap: 10px 0px;
+  }
+
+
+  .photography {
+    height: 406vh;
+    display: grid;
+    grid-template-columns: 629px;
+    /*grid-template-rows: auto auto;*/
+    grid-gap: 0px 0px;
+    margin-bottom: 4%;
+  }
+
+  .photography img {
+    width:auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .currently {
+    /* height: 47vh; */
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 363px;
+    /*grid-template-rows: auto;*/
+    grid-gap: 0px 0px;
+    padding: 1px;
+    line-height: 20px;
+  }
+
+  .container img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+
+@media screen and (max-width: 477px) {
+  .photography {
+    height: 180vh;
+    display: grid;
+    grid-template-columns: 536px;
+    /* grid-template-rows: auto auto; */
+    grid-gap: 0px 0px;
+    margin-bottom: 4%;
+  }
+
+  .currently {
+    height: 305vh;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 363px;
+    /* grid-template-rows: auto; */
+    grid-gap: 0px 0px;
+    padding: 1px;
+    line-height: 20px;
+  }
+
+  .container {
+    height: 763vh;
+    margin-bottom: 72px;
+    display: grid;
+    grid-template-columns: 480px;
+    /* grid-template-rows: auto auto auto; */
+    grid-gap: 10px 0px;
+  }
+
+  .cell-10 {
+    width: 477px;
+  }
+
+  .cell-11 {
+    width: 477px;
+  }
+
+  .cell-12 {
+    background: black;
+    grid-row: span 2;
+    grid-column: 1;
+  }
+
+
+}
