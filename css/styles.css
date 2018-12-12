@@ -3,7 +3,7 @@ body {
 }
 
 .page-container {
-  margin-left: 2em;
+  margin-left: 0em;
   margin-right: 3em;
   border-bottom-style: inset;
 }
@@ -89,9 +89,12 @@ h1 {
     /* height: 47vh; */
     margin: 20px;
     display: grid;
-    grid-template-columns: 432px 432px 433px;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
     grid-gap: 10px 0px;
+}
+
+.image {
+  width: 100%;
 }
 
 /*Styling of the projects container, images and descriptions of each project*/
@@ -127,8 +130,7 @@ h1 {
     /* height: 47vh; */
     margin: 67px;
     display: grid;
-    grid-template-columns: 637px 637px;
-    grid-template-rows: auto auto;
+    grid-template-columns: 50% 50%;
     grid-gap: 0px 0px;
 }
 
@@ -143,8 +145,7 @@ h1 {
     /* height: 47vh; */
     margin: 0px;
     display: grid;
-    grid-template-columns: 363px 371px 373px 402px;
-    grid-template-rows: auto;
+    grid-template-columns: auto auto auto auto;
     grid-gap: 0px 0px;
     padding: 1px;
     line-height: 20px;
@@ -160,18 +161,21 @@ h1 {
 
 /*Individual styling for each class item on each div*/
 .currently img {
-  width: 309px;
-  height: 321px;
+  width: 100%;
+  height: 100%;
 }
 .cell {
   color: white;
   font-size: 1rem;
-  text-align: center;
-  padding: 2rem;
+  padding: 1rem;
+  margin-right: 0%;
+  /*! width: 100%; */
+  height: 75%;
 }
 
 .cell :hover .image {
   opacity: 0.3;
+  /*! width: auto; */
 }
 .cell-1 {
   background: black;
@@ -212,8 +216,8 @@ h1 {
 
 .cell-12 {
   background: black;
-  grid-row: span 2;
-  grid-column: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .cell-13 {
@@ -308,19 +312,22 @@ nav {
 @media screen and (max-width: 992px) {
 
   .page-container {
-    margin-left: 3em;
-    margin-right: 1em;
+    /*! margin-left: 0em; */
+    /*! margin-right: 1em; */
     border-bottom-style: inset;
+  }
+
+  .image {
+    width: 100%;
   }
 
 
   .container {
-    height: 420vh;
+    height: 297vh;
     margin-bottom: 72px;
-    margin-left: 30%;
+    margin-left: 5%;
     display: grid;
-    grid-template-columns: 432px 432px;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: 50% 50%;
     grid-gap: 0px 0px;
   }
 
@@ -328,18 +335,17 @@ nav {
     /* height: 47vh; */
     margin: 67px;
     display: grid;
-    grid-template-columns: 640px 432px;
-    grid-template-rows: auto auto;
+    grid-template-columns: 50% 50%;
     grid-gap: 0px 0px;
   }
 
   .cell-10 {
-    width: 432px;
+    width: 100%;
 
   }
 
   .cell-11 {
-    width: 432px;
+    width: 100%;
 
   }
 
@@ -347,16 +353,15 @@ nav {
     height: 95vh;
     margin-left: 67px;
     display: grid;
-    grid-template-columns: 284px 284px 284px 250px;
-    grid-template-rows: auto;
+    grid-template-columns: auto auto;
     grid-gap: 0px 26px;
     padding: 1px;
     line-height: 20px;
 }
 
   .currently img {
-    width: 274px;
-    height: 311px;
+    width: 100%;
+    /*! height: 311px; */
   }
 
   h1 {
@@ -375,8 +380,8 @@ nav {
 @media screen and (max-width: 480px) {
 
   .page-container {
-    margin-left: 3em;
-    margin-right: -50em;
+    margin-left: 0em;
+    margin-right: 0em;
     border-bottom-style: inset;
 }
 
@@ -385,7 +390,7 @@ nav {
     height: 578vh;
     margin-bottom: 72px;
     display: grid;
-    grid-template-columns: 480px;
+    grid-template-columns: auto;
     /* grid-template-rows: auto auto auto; */
     grid-gap: 10px 0px;
   }
@@ -394,16 +399,17 @@ nav {
   .photography {
     height: 406vh;
     display: grid;
-    grid-template-columns: 629px;
+    grid-template-columns: auto;
     /*grid-template-rows: auto auto;*/
     grid-gap: 0px 0px;
     margin-bottom: 4%;
   }
 
   .photography img {
-    width:auto;
+    width: 100%;
     max-width: 100%;
     height: auto;
+    overflow: hidden;
   }
 
   .currently {
@@ -417,6 +423,10 @@ nav {
     line-height: 20px;
   }
 
+  .currently img {
+    width: 100%;
+  }
+
   .container img {
     width: auto;
     max-width: 100%;
@@ -427,19 +437,18 @@ nav {
 
 @media screen and (max-width: 477px) {
   .photography {
-    height: 180vh;
+    height: 129vh;
     display: grid;
-    grid-template-columns: 536px;
+    grid-template-columns: auto;
     /* grid-template-rows: auto auto; */
     grid-gap: 0px 0px;
     margin-bottom: 4%;
   }
 
   .currently {
-    height: 305vh;
     margin: 0px;
     display: grid;
-    grid-template-columns: 363px;
+    grid-template-columns: auto;
     /* grid-template-rows: auto; */
     grid-gap: 0px 0px;
     padding: 1px;
@@ -447,26 +456,43 @@ nav {
   }
 
   .container {
-    height: 763vh;
+    height: 610vh;
     margin-bottom: 72px;
     display: grid;
-    grid-template-columns: 480px;
+    grid-template-columns: auto;
     /* grid-template-rows: auto auto auto; */
     grid-gap: 10px 0px;
   }
 
   .cell-10 {
-    width: 477px;
+    width: 100%;
   }
 
   .cell-11 {
-    width: 477px;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 1;
   }
 
   .cell-12 {
     background: black;
-    grid-row: span 2;
+    /*! grid-row: span 2; */
     grid-column: 1;
+    width: 100%;
+  }
+
+  .cell-13 {
+    background: black;
+    /*! grid-row: span 2; */
+    grid-column: 1;
+    width: 100%;
+  }
+
+  .cell-14 {
+    background: black;
+    /*! grid-row: span 2; */
+    grid-column: 1;
+    width: 100%;
   }
 
 
