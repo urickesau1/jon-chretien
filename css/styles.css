@@ -3,8 +3,8 @@ body {
 }
 
 .page-container {
-  margin-left: 0em;
-  margin-right: 3em;
+  margin-left: 10em;
+  margin-right: 10em;
   border-bottom-style: inset;
 }
 
@@ -36,13 +36,15 @@ h1 {
 
 
 #banner_container h2 {
-  font-family: "Vollkorn";
+  /*! font-family: "Vollkorn"; */
   font-style: bold;
   font-size: 42px;
   font-style: normal;
   color: white;
   text-align: center;
   font-weight: 900px;
+  font-family: 'Vollkorn', serif;
+  font-family: 'Vollkorn', serif;
 }
 
 #banner_container {
@@ -73,12 +75,13 @@ h1 {
     color: #d9d9d9;
     display: block;
     font-size: 2rem;
-    font-family: "Vollkorn: serif";
-    font-style: normal;
+    font-family: "Vollkorn": serif"";
+    /*! font-style: normal; */
     line-height: 38px;
-    text-decoration: inherit;
+    /*! text-decoration: inherit; */
     word-spacing: 1px;
     margin-bottom: 85px;
+    font-weight: 400;
 }
 
 /*End of the styling of the banner container*/
@@ -312,8 +315,8 @@ nav {
 @media screen and (max-width: 992px) {
 
   .page-container {
-    /*! margin-left: 0em; */
-    /*! margin-right: 1em; */
+    margin-left: 0em;
+    margin-right: 1em;
     border-bottom-style: inset;
   }
 
@@ -323,7 +326,7 @@ nav {
 
 
   .container {
-    height: 297vh;
+    height: 187vh;
     margin-bottom: 72px;
     margin-left: 5%;
     display: grid;
@@ -400,7 +403,7 @@ nav {
 
 
   .container {
-    height: 578vh;
+    height: 376vh;
     margin-bottom: 72px;
     display: grid;
     grid-template-columns: auto;
