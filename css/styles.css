@@ -35,7 +35,7 @@ h1 {
 }
 
 
-#banner_container h1 {
+#banner_container h2 {
   font-family: "Vollkorn";
   font-style: bold;
   font-size: 42px;
@@ -69,11 +69,11 @@ h1 {
   color: #4d4d00;
 }
 
-#banner_container pre {
+#banner_container h2 {
     color: #d9d9d9;
     display: block;
-    font-size: 37px;
-    font-family: "Vollkorn:400";
+    font-size: 2rem;
+    font-family: "Vollkorn: serif";
     font-style: normal;
     line-height: 38px;
     text-decoration: inherit;
@@ -377,7 +377,20 @@ nav {
 
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 700px) {
+
+
+  #banner_container h2 {
+    color: #d9d9d9;
+    display: block;
+    font-size: 14px;
+    font-family: "Vollkorn:400";
+    font-style: normal;
+    line-height: 23px;
+    text-decoration: inherit;
+    word-spacing: 1px;
+    margin-bottom: 85px;
+}
 
   .page-container {
     margin-left: 0em;
@@ -397,12 +410,12 @@ nav {
 
 
   .photography {
-    height: 406vh;
+    height: 56vh;
     display: grid;
     grid-template-columns: auto;
     /*grid-template-rows: auto auto;*/
     grid-gap: 0px 0px;
-    margin-bottom: 4%;
+    margin-bottom: 32%;
   }
 
   .photography img {
@@ -416,7 +429,7 @@ nav {
     /* height: 47vh; */
     margin: 0px;
     display: grid;
-    grid-template-columns: 363px;
+    grid-template-columns: auto;
     /*grid-template-rows: auto;*/
     grid-gap: 0px 0px;
     padding: 1px;
@@ -435,14 +448,29 @@ nav {
 
 }
 
-@media screen and (max-width: 477px) {
+@media screen and (max-width: 510px) {
+
+  #banner_container h2 {
+    color: #d9d9d9;
+    display: block;
+    font-size: 100%;
+    font-family: "Vollkorn:400";
+    font-style: normal;
+    line-height: 23px;
+    text-decoration: inherit;
+    word-spacing: 1px;
+    margin-bottom: 85px;
+}
+
+
+
   .photography {
-    height: 129vh;
+    height: 112vh;
     display: grid;
     grid-template-columns: auto;
     /* grid-template-rows: auto auto; */
-    grid-gap: 0px 0px;
-    margin-bottom: 4%;
+    /*! grid-gap: 0px 0px; */
+    margin-bottom: 38%;
   }
 
   .currently {
@@ -453,10 +481,12 @@ nav {
     grid-gap: 0px 0px;
     padding: 1px;
     line-height: 20px;
+    /*! height: 205vh; */
+    margin-top: 10%;
   }
 
   .container {
-    height: 610vh;
+    height: 623vh;
     margin-bottom: 72px;
     display: grid;
     grid-template-columns: auto;
